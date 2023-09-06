@@ -1,6 +1,29 @@
+@use "sass:map";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import '_colors.scss';
+@import '_fonts.scss';
+@import '_gradients.scss';
+
+@mixin color($name, $value) {
+    color: map.get($name, $value);
+}
+@mixin background-color($name, $value) {
+    background-color: map.get($name, $value);
+}
+@mixin font($name, $size, $line-height, $letter-spacing) {
+    font-size: map.get($name, $size);
+    line-height: map.get($name, $line-height);
+    letter-spacing: map.get($name, $letter-spacing);
+}
+@mixin gradient($name, $value) {
+    background-color: map.get($name, $value);
+}
 body {
-    background-color: blue;
+    //@include background-color($noble-black, "300");
+    @include gradient($gradient, "gradient");
+    font-style: normal;
+    font-weight: 400; 
     font-family: 'Plus Jakarta Sans', sans-serif;
+    @include font($BodyM, "size", "line-height", "letter-spacing");
 }
 
