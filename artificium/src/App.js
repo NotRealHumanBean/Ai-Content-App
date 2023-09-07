@@ -1,11 +1,10 @@
 import logo from './logo.svg';
-import './css/app.css';
+import './assets/styles/css/app.css';
+import Router from './components/router/Router'
 
 function App() {
   return (
-    <div className="App">
-      <div>HeadingXL</div>
-    </div>
+    <Router/>
   );
 }
 
