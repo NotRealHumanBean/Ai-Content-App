@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './assets/styles/css/app.css';
+import './assets/styles/app.scss';
 import Router from './components/router/Router'
 
 function App() {
