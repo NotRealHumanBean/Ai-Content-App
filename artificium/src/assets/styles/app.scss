@@ -19,25 +19,179 @@
 	background-color: map.get($name, $value);
 }
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
 body {
-	@include background-color($noble-black, "700");
+	@include background-color($noble-black, '700');
 	color: white;
 	font-style: normal;
 	font-weight: 400;
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	@include font($BodyM, 'size', 'line-height', 'letter-spacing');
 }
-input{
-	@include background-color($noble-black, "600");
+
+
+
+
+/// Login Page -------------------->
+input {
+	@include background-color($noble-black, '700');
 	border-radius: 7px;
-	border: 1px solid #363A3D;
+	border: 1px solid #363a3d;
 	padding: 0 16px;
-	gap:16;
-	@include color($noble-black, "300");
-	
+	gap: 16;
+	@include color($noble-black, '300');
 }
+
+.inputBox {
+	margin-top: 64px;
+	display: flex;
+	flex-direction: column;
+	border: linear-gradient(#4d62e5, #87ddee, B6F09C);
+}
+.inputBox input {
+	padding-left: 40px;
+	position: relative;
+	width: 490px;
+	height: 45px;
+}
+.inputBox img {
+	margin: 10px 0 0 10px;
+	position: absolute;
+	width: 24px;
+	heigh: 24px;
+}
+.inputBox + .inputBox {
+	margin-top: 24px;
+}
+.logo {
+	width: 32px;
+	height: 32px;
+	margin: 45px 0 0 45px;
+}
+.loginBtn {
+	height: 45px;
+	margin: 0 0 48px 0;
+	border: none;
+	border-radius: 12px;
+	background-color: #b6f09c;
+}
+.wrapper {
+	margin: 30px 0px 78px 190px;
+	width: 490px;
+	display: flex;
+	flex-direction: column;
+}
+.header h2 + p {
+	margin-top: 24px;
+}
+.header p {
+	@include color($noble-black, '300');
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-hight: 28px;
+	letter-spacing: 0.15px;
+}
+.header h2 {
+	font-size: 36px;
+	font-style: normal;
+	form-weight: 400;
+	line-hight: 44px;
+}
+h2 span {
+	background: linear-gradient(45deg, #4d62e5 0%, #87ddee 45.31%, #b6f09c 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.signUp {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+.signUp span{
+	margin-left:10px;
+}
+span{
+	background:linear-gradient(45deg, #82DBF7 0%, #B6F09C 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.checkBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 30px 0 30px 0;
+}
+.cnt {
+	margin: 0 0 48px 0;
+}
+.cnt hr {
+}
+.cnt p {
+	width: 140px;
+	height: 20px;
+	font-style: 12px;
+	@include background-color($noble-black, '700');
+	padding: 0 12px;
+	margin: -12.5px auto 0 auto;
+}
+.reg {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+button:hover {
+	cursor: pointer;
+	background: rgb(130, 219, 247);
+	background: radial-gradient(
+		circle,
+		rgba(130, 219, 247, 1) 0%,
+		rgba(182, 240, 156, 1) 100%
+	);
+}
+.reg button {
+	border-radius: 12px;
+	@include background-color($noble-black, '700');
+	border: none;
+	position: relative;
+	height: 45px;
+	width: 230px;
+	z-index: 2;
+	color: #686b6e;
+}
+.reg img {
+	margin: 13px 0 0 20px;
+	z-index: 3;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100vh;
+}
+.ImgContainer {
+	background-image: url(../img/abstract-01.png);
+	background-position: right;
+	border-radius: 24px;
+	width: 43%;
+	background-size: cover;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+}
+///-----------------------------------------------
+
+
+
+
+/// Chat page ------------->
+
+
