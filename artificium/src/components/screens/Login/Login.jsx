@@ -7,11 +7,14 @@ import { Link } from 'react-router-dom'
 const Login = () => {
 	return (
 		<div className='container'>
-			<div>
-				<img src={Logo} className='logo' />
+			<div className="formContainer">
+				<div className="logoContainer">
+					<img src={Logo} className='logo' />
+				</div>
+				
 				<div className="wrapper">
 					<div className='header'>
-						<h2>Let's get <span>creative!</span></h2>
+						<h2 className="headerTitle">Let's get <span>creative!</span></h2>
 						<p>Log in to Artificium to start creating magic.</p>
 					</div>
 					<div className='inputBox'>
@@ -23,23 +26,24 @@ const Login = () => {
 						<img src={Lock} />
 					</div>
 					<div className='checkBox'>
-						<div>
-							<input type='checkbox' name='remember' />
+						<div className="checkBoxField">
+							<input type='checkbox' id='remember' name="remember" className="check-box"/>
 							<label for='remember'>Remember me</label>
 						</div>
-						<Link to='/forgotPassword'><span>Forgot password?</span></Link>
+						<Link to='/forgotPassword'><span className="forgotten-psw">Forgot Password?</span></Link>
 					</div>
-					<button className='loginBtn'>Login</button>
+					<button className='loginBtn'>Log in</button>
 					<div className='cnt'>
-						<hr />
+						<span></span>
 						<p>or continue with</p>
+						<span></span>
 					</div>
 					<div className='reg'>
-						<div>
+						<div className="reg-item">
 							<img src={Google} />
 							<button>Google Account</button>
 						</div>
-						<div>
+						<div className="reg-item">
 							<img src={Apple} />
 							<button>Apple Account</button>
 						</div>
