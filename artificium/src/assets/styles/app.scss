@@ -3,7 +3,8 @@
 @import '_colors.scss';
 @import '_fonts.scss';
 @import '_null.scss';
-@import 'Login.scss';
+//@import 'Login.scss';
+@import '../../components/screens/Login/Log.scss';
 
 @mixin color($name, $value) {
 	color: map.get($name, $value);
