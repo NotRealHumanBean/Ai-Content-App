@@ -1,15 +1,10 @@
 /// Login Page -------------------->
-/// CONTAINER
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////WRAPPERS	
+
 @use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 @import '../../../assets/styles/_colors';
 @import '../../../assets/styles/_fonts';
 @import '../../../assets/styles/_null';
-
-// @import '_colors.scss';
-// @import '_fonts.scss';
-// @import '_null.scss';
 
 @mixin color($name, $value) {
 	color: map.get($name, $value);
@@ -37,7 +32,6 @@
 	flex-direction: column;
 }
 .ImgContainer {
-	//background-image: url(../img/abstract-01.png);
 	background-image: url(../../../assets/img/abstract-01.png);
 	background-position: right;
 	border-radius: 24px;
@@ -244,9 +238,7 @@ input {
 .reg {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-
-	
+	justify-content: space-between;	
 }
 button:hover {
 	cursor: pointer;

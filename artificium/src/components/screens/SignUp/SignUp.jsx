@@ -6,7 +6,6 @@ import Google from '../../../assets/img/icons/frame 1.svg'
 import { Link } from 'react-router-dom'
 import React, { Component } from "react";
 
-//const SignUp = () => {
 export default class SignUp extends Component {
 	constructor(props) {
 		super(props);
