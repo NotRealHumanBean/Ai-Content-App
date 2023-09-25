@@ -6,6 +6,7 @@
 @import '../../../assets/styles/_colors';
 @import '../../../assets/styles/_fonts';
 @import '../../../assets/styles/_null';
+
 // @import '_colors.scss';
 // @import '_fonts.scss';
 // @import '_null.scss';
@@ -244,6 +245,8 @@ input {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+	
 }
 button:hover {
 	cursor: pointer;
@@ -313,4 +316,58 @@ button:hover {
 	}
 
 }
-///-----------------------------------------------
+///-----------------------------------------------styles for sign up
+.signUp-reg {
+	margin-top: 64px;
+}
+.google-item {
+	padding-left: 12px;
+}
+.signUp-cnt {
+	margin: 48px 0px;
+}
+.signUp-inputBox {
+	margin-top: 0;
+}
+.signUp-centered {
+	margin: 0 0 20px 0;
+	justify-content: center;
+}
+.ImgContainer-signup {
+	background-image: url(../../../assets/img/signup.png);
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: end;
+	 @media(max-width: 767px) {
+		background-position: center;
+	 }
+	 @media(max-width: 700px) {
+		display: none;
+	 }
+	.image-content {
+		padding-bottom: 56px;
+		max-width: 608px;
+		margin: 0 auto;
+		.image-phrase {
+			@include font($headingL, 'size', 'line-height', 'letter-spacing');
+			color: #fff;
+			font-weight: 600;
+			margin-bottom: 56px;
+			@media(max-width: 1100px) {
+				margin-bottom: 36px;
+				@include font($headingS, 'size', 'line-height', 'letter-spacing');
+			}
+		}
+		.image-author {
+			display: flex;
+			flex-direction: column;
+		}
+		.author {
+			@include font($headingXS, 'size', 'line-height', 'letter-spacing');
+		}
+		.place {
+			@include font($BodyM, 'size', 'line-height', 'letter-spacing');
+			@include color($stem-green, "500");
+		}
+	}
+}
