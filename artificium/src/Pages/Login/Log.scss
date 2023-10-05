@@ -2,9 +2,9 @@
 
 @use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-@import '../../../assets/styles/_colors';
-@import '../../../assets/styles/_fonts';
-@import '../../../assets/styles/_null';
+@import '../../assets/styles/_colors';
+@import '../../assets/styles/_fonts';
+@import '../../assets/styles/_null';
 
 @mixin color($name, $value) {
 	color: map.get($name, $value);
@@ -32,7 +32,7 @@
 	flex-direction: column;
 }
 .ImgContainer {
-	background-image: url(../../../assets/img/abstract-01.png);
+	background-image: url(../../assets/img/abstract-01.png);
 	background-position: right;
 	border-radius: 24px;
 	background-size: cover;
@@ -70,7 +70,7 @@
 }
 /// 
 input {
-	@include background-color($noble-black, '700');
+	@include background-color($noble-black, '600');
 	border-radius: 7px;
 	border: 1px solid #363a3d;
 	padding: 0 16px;
@@ -329,7 +329,7 @@ button:hover {
 	margin-top: 48px;
 }
 .ImgContainer-signup {
-	background-image: url(../../../assets/img/signup.png);
+	background-image: url(../../assets/img/signup.png);
 	 display: flex;
 	 flex-direction: column;
 	 justify-content: end;

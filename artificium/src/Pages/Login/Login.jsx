@@ -1,8 +1,8 @@
-import Logo from '../../../assets/img/logo.svg'
-import Email from '../../../assets/img/icons/email.svg'
-import Lock from '../../../assets/img/icons/lock.svg'
-import Apple from '../../../assets/img/icons/frame.svg'
-import Google from '../../../assets/img/icons/frame 1.svg'
+import Logo from '../../assets/img/logo.svg'
+import Email from '../../assets/img/icons/email.svg'
+import Lock from '../../assets/img/icons/lock.svg'
+import Apple from '../../assets/img/icons/frame.svg'
+import Google from '../../assets/img/icons/frame 1.svg'
 import { Link } from 'react-router-dom'
 import React, { Component } from "react";
 

@@ -1,0 +1,56 @@
+@use 'sass:map';
+@import '../../../../assets/styles/_colors';
+@import '../../../../assets/styles/_fonts';
+@import '../../../../assets/styles/_null';
+
+@mixin color($name, $value) {
+	color: map.get($name, $value);
+}
+
+@mixin background-color($name, $value) {
+	background-color: map.get($name, $value);
+}
+
+@mixin font($name, $size, $line-height, $letter-spacing) {
+	font-size: map.get($name, $size);
+	line-height: map.get($name, $line-height);
+	letter-spacing: map.get($name, $letter-spacing);
+}
+
+@mixin gradient($name, $value) {
+	background-color: map.get($name, $value);
+}
+
+.accordion {
+	margin: 15px 0 0 15px;
+	padding: 5px;
+
+	h2 {
+		background: none;
+		@include color($noble-black, '400');
+		margin-bottom: 20px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	&__item {
+		display: flex;
+		margin: 15px 0 15px 0;
+		cursor: pointer;
+
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	&__collapse {
+		height: 0;
+		overflow: hidden;
+		transition: heigh .3s;
+	}
+
+	&__collapse.open {
+		height: auto;
+	}
+}

@@ -1,11 +1,8 @@
-import logo from './logo.svg';
-import './assets/styles/app.scss';
-import Router from './components/router/Router'
+import './assets/styles/app.scss'
+import Router from './utils/router/Router'
 
 function App() {
-  return (
-    <Router/>
-  );
+	return <Router />
 }
 
-export default App;
+export default App
