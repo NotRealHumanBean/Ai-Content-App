@@ -1,0 +1,35 @@
+@use 'sass:map';
+.wrapper {
+	display: grid;
+	grid-template-areas:
+		'sidebar topBar topBar'
+		'sidebar content member';
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: 1fr 2.9fr 0.5fr;
+	grid-template-rows: 1fr 2fr;
+	gap: 20px;
+	height: 100vh;
+	width: 100%;
+	padding: 20px;
+}
+.sidebar {
+	background: #0d0f10;
+	border-radius: 20px;
+	grid-area: sidebar;
+	position: relative;
+}
+.topBar {
+	display:grid;
+	background: gray;
+	grid-area: topBar;
+}
+
+.content {
+	grid-area: content;
+	background: gray;
+}
+
+.member {
+	grid-area: member;
+	background: gray;
+}

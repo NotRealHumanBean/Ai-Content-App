@@ -1,0 +1,94 @@
+@use 'sass:map';
+@import '../../../assets/styles/_colors';
+@import '../../../assets/styles/_fonts';
+@import '../../../assets/styles/_null';
+
+@mixin color($name, $value) {
+	color: map.get($name, $value);
+}
+
+@mixin background-color($name, $value) {
+	background-color: map.get($name, $value);
+}
+
+@mixin font($name, $size, $line-height, $letter-spacing) {
+	font-size: map.get($name, $size);
+	line-height: map.get($name, $line-height);
+	letter-spacing: map.get($name, $letter-spacing);
+}
+
+@mixin gradient($name, $value) {
+	background-color: map.get($name, $value);
+}
+
+
+
+.nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 10px;
+	line-height: 25px;
+	height: 95px;
+	border-bottom: 4px solid #131619;
+}
+
+.workSpace {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin-left: 16px;
+
+	img+div {
+		margin-left: 16px;
+	}
+}
+
+.userAvatar {
+	width: 48px;
+	height: 48px;
+}
+
+.amountSub {
+	@include color($stem-green, '500');
+}
+
+.dropDown {
+	position: absolute;
+	margin: 0 0 0 85%;
+	width: 18px;
+	appearance: none;
+	height: 20px;
+	cursor: pointer;
+	background: #0d0f10;
+	background-image: url('../../../assets/img/icons/chevron-down.svg');
+}
+
+.user {
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	border-radius: 16px;
+	margin: 15px;
+	display: flex;
+	align-item: center;
+	justify-content: space-between;
+	gap: 15px;
+	padding: 16px;
+	border-top: 1px solid var(--glass-stroke, rgba(255, 255, 255, 0.08));
+	background: linear-gradient(118deg,
+			rgba(215, 237, 237, 0.16) -47.79%,
+			rgba(204, 235, 235, 0) 100%);
+
+	div {
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+	}
+
+	button {
+		background: none;
+	}
+}
