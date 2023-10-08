@@ -1,0 +1,20 @@
+@use 'sass:map';
+.workspace {
+    display: flex;
+}
+.workspaceContent {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-between;
+
+}
+.workspaceImage {
+    @media(min-width:767px) {
+        flex: 0 1 37.5%;
+        height: 1024px;
+        background: url("../../assets/img/workspace01.png");
+        background-repeat: no-repeat;
+        border-radius: 24px;
+    }
+}

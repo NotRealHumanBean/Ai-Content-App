@@ -1,0 +1,17 @@
+@use 'sass:map';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/colors';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px 48px 48px;
+    @include color($noble-black, '300');
+    @include font($BodyM, 'size', 'line-height', 'letter-spacing');
+    font-weight: 500;
+}
+.privacyPolicy a{
+    @include color($noble-black, '300');
+}

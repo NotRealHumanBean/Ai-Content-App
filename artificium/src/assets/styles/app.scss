@@ -1,24 +1,12 @@
 @use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import '_mixins.scss';
 @import '_colors.scss';
 @import '_fonts.scss';
 @import '_null.scss';
 @import '../../Pages/Login/Log.scss';
 
-@mixin color($name, $value) {
-	color: map.get($name, $value);
-}
-@mixin background-color($name, $value) {
-	background-color: map.get($name, $value);
-}
-@mixin font($name, $size, $line-height, $letter-spacing) {
-	font-size: map.get($name, $size);
-	line-height: map.get($name, $line-height);
-	letter-spacing: map.get($name, $letter-spacing);
-}
-@mixin gradient($name, $value) {
-	background-color: map.get($name, $value);
-}
+
 
 * {
 	padding: 0;

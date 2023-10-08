@@ -1,0 +1,11 @@
+.logoContainer {
+	display: flex;
+}
+.logo {
+	width: 32px;
+	height: 32px;
+	margin: 45px 0 12.4% 45px;
+	@media(max-width: 1000px) {
+		margin: 45px 0 12.4% 0;
+	}
+}
