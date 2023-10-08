@@ -1,0 +1,34 @@
+@use 'sass:map';
+@import "../../../assets/styles/mixins";
+@import "../../../assets/styles/fonts";
+@import "../../../assets/styles/colors";
+
+.joinWrapper {
+    margin: 0 auto;
+    max-width: 676px
+
+}
+.joinHeader {
+    @include font($headingXL, 'size', 'line-height', 'letter-spacing');
+    margin-bottom: 24px;
+}
+.joinText {
+    @include font($BodyXL, 'size', 'line-height', 'letter-spacing');
+    margin-bottom: 64px;
+}
+.joinBlock input {
+    height: 48px;
+    display: flex;
+    padding: 0px 16px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 8px;
+    @include background-color($noble-black, "600");
+    @include font($BodyL, 'size', 'line-height', 'letter-spacing');
+    border: 1px solid #363A3D;
+    text-align: left;
+}
+.joinBlock input::placeholder {
+    content:"artificium.app"
+}

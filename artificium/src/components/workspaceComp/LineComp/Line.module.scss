@@ -1,0 +1,35 @@
+@use 'sass:map';
+@import "../../../assets/styles/mixins";
+@import "../../../assets/styles/fonts";
+
+.cnt {
+	margin: 0 0 48px 0;
+	@include color($noble-black, "400");
+	@include font($BodyS, 'size', 'line-height', 'letter-spacing');
+	font-weight: 500;
+	display: flex;
+	align-items: top;
+	width: 100%;
+}
+.cnt p {
+	display: flex;
+	align-items: end;
+	white-space: nowrap;
+}
+.cnt span {
+	display: inline-block;
+	height: 1px;
+	width: 100%;
+	@include background-color($noble-black, "400");
+}
+.cnt hr {
+	@include color($noble-black, "400");
+}
+.cnt p {
+	width: 140px;
+	height: 20px;
+	font-style: 12px;
+	@include background-color($noble-black, '700');
+	padding: 0 12px;
+	margin: -12.5px auto 0 auto;
+}
